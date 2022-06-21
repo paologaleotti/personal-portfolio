@@ -35,7 +35,7 @@ export default function Project(props) {
 				height={{ md: "20rem" }}
 				direction={{ base: "column", md: "row" }}
 				bg={"gray.800"}
-				boxShadow={"2xl"}
+				boxShadow={"1xl"}
 				padding={4}
 			>
 				<Flex flex={1} bg="blue.200" borderRadius={10}>
@@ -69,7 +69,8 @@ export default function Project(props) {
 						align={"center"}
 						justify={"center"}
 						direction={"row"}
-						mt={6}
+						mt={10}
+						pt={2}
 					>
 						{badgeList}
 					</Stack>
@@ -107,8 +108,8 @@ export default function Project(props) {
 							_hover={{
 								bg: "blue.500",
 							}}
-							_focus={{
-								bg: "blue.500",
+							_active={{
+								bg: "blue.600",
 							}}
 						>
 							Demo

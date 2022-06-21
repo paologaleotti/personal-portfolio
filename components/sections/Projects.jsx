@@ -7,34 +7,21 @@ import {
 } from "@chakra-ui/react";
 import Project from "../ui/Project";
 
-function Projects() {
+function Projects(props) {
+	const projectList = props.projects.map((pr, id) => (
+		<Project
+			key={id}
+			title={pr.title}
+			desc={pr.desc}
+			imageSrc={pr.imageSrc}
+			badges={pr.badges}
+		/>
+	));
+
 	return (
-		<Center minH={"100vh"} bgColor={"blue.500"}>
+		<Center minH={"100vh"} bgColor={"blue.700"}>
 			<SimpleGrid columns={[1, 2, 2]} spacingX={7} spacingY={7} p={7}>
-				<Project
-					title="OrderMe"
-					desc="App creata con React per ordinare cibo"
-					imageSrc="https://raw.githubusercontent.com/paologaleotti/order-me/master/src/assets/app-demo.gif"
-					badges={["React", "Firebase"]}
-				/>
-				<Project
-					title="OrderMe"
-					desc="App creata con React per ordinare cibo"
-					imageSrc="https://raw.githubusercontent.com/paologaleotti/order-me/master/src/assets/app-demo.gif"
-					badges={["React", "Firebase"]}
-				/>
-				<Project
-					title="OrderMe"
-					desc="App creata con React per ordinare cibo"
-					imageSrc="https://raw.githubusercontent.com/paologaleotti/order-me/master/src/assets/app-demo.gif"
-					badges={["React", "Firebase"]}
-				/>
-				<Project
-					title="OrderMe"
-					desc="App creata con React per ordinare cibo"
-					imageSrc="https://raw.githubusercontent.com/paologaleotti/order-me/master/src/assets/app-demo.gif"
-					badges={["React", "Firebase"]}
-				/>
+				{projectList}
 			</SimpleGrid>
 		</Center>
 	);

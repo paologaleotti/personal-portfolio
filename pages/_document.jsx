@@ -8,8 +8,8 @@ export default class Document extends NextDocument {
 		return (
 			<Html lang="en">
 				<Head />
+				<title>Portfolio</title>
 				<body>
-					{/* 👇 Here's the script */}
 					<ColorModeScript initialColorMode="dark" />
 					<Main />
 					<NextScript />

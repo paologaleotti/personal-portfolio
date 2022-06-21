@@ -42,7 +42,9 @@ function Landing() {
 						fontSize={{ base: "md", lg: "lg" }}
 						color={"gray.500"}
 					>
-						Appassionato di sviluppo web
+						Aspirante sviluppatore di applicazioni <b>Web</b> e{" "}
+						<b>mobile</b>, appassionato a tutto il mondo
+						informatico.
 					</Text>
 					<Stack
 						direction={{ base: "column", md: "row" }}
