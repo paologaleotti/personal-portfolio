@@ -32,11 +32,11 @@ export default function Project(props) {
 				borderWidth="1px"
 				borderRadius="10"
 				w={{ md: "540px" }}
-				height={{ md: "20rem" }}
+				height={{ md: "18rem" }}
 				direction={{ base: "column", md: "row" }}
 				bg={"gray.800"}
-				boxShadow={"1xl"}
-				padding={4}
+				boxShadow={"2xl"}
+				padding={5}
 			>
 				<Flex flex={1} bg="blue.200" borderRadius={10}>
 					<Image
@@ -94,26 +94,41 @@ export default function Project(props) {
 								bg: "gray.400",
 							}}
 						>
-							GitHub
+							<a
+								href={props.ghLink}
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								GitHub
+							</a>
 						</Button>
-						<Button
-							flex={1}
-							fontSize={"sm"}
-							rounded={10}
-							bg={"blue.400"}
-							color={"white"}
-							boxShadow={
-								"0px 1px 25px -8px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 20%)"
-							}
-							_hover={{
-								bg: "blue.500",
-							}}
-							_active={{
-								bg: "blue.600",
-							}}
-						>
-							Demo
-						</Button>
+
+						{props.demoLink && (
+							<Button
+								flex={1}
+								fontSize={"sm"}
+								rounded={10}
+								bg={"blue.400"}
+								color={"white"}
+								boxShadow={
+									"0px 1px 25px -8px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 20%)"
+								}
+								_hover={{
+									bg: "blue.500",
+								}}
+								_active={{
+									bg: "blue.600",
+								}}
+							>
+								<a
+									href={props.demoLink}
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									Demo
+								</a>
+							</Button>
+						)}
 					</Stack>
 				</Stack>
 			</Stack>

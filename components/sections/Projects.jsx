@@ -15,6 +15,8 @@ function Projects(props) {
 			desc={pr.desc}
 			imageSrc={pr.imageSrc}
 			badges={pr.badges}
+			demoLink={pr.demoLink}
+			ghLink={pr.ghLink}
 		/>
 	));
 
