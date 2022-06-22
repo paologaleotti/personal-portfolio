@@ -38,11 +38,17 @@ const PROJECTS = [
 	},
 ];
 
-export default function HomePage() {
+export default function HomePage({ projectList }) {
 	return (
 		<>
 			<Landing />
-			<Projects projects={PROJECTS} />
+			<Projects projects={projectList} />
 		</>
 	);
+}
+
+export async function getStaticProps(context) {
+	return {
+		props: { projectList: PROJECTS }, // will be passed to the page component as props
+	};
 }

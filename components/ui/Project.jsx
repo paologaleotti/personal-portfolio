@@ -5,11 +5,12 @@ import {
 	Flex,
 	Heading,
 	Image,
-	Link,
 	Stack,
 	Text,
 	useColorModeValue,
 } from "@chakra-ui/react";
+
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export default function Project(props) {
 	const badgeList = props.badges.map((badge, id) => (
@@ -84,6 +85,10 @@ export default function Project(props) {
 						alignItems={"center"}
 					>
 						<Button
+							as="a"
+							href={props.ghLink}
+							target="_blank"
+							rel="noreferrer noopener"
 							flex={1}
 							fontSize={"sm"}
 							rounded={10}
@@ -94,17 +99,14 @@ export default function Project(props) {
 								bg: "gray.400",
 							}}
 						>
-							<a
-								href={props.ghLink}
-								target="_blank"
-								rel="noreferrer noopener"
-							>
-								GitHub
-							</a>
+							GitHub
 						</Button>
-
 						{props.demoLink && (
 							<Button
+								as="a"
+								href={props.demoLink}
+								target="_blank"
+								rel="noreferrer noopener"
 								flex={1}
 								fontSize={"sm"}
 								rounded={10}
@@ -120,13 +122,7 @@ export default function Project(props) {
 									bg: "blue.600",
 								}}
 							>
-								<a
-									href={props.demoLink}
-									target="_blank"
-									rel="noreferrer noopener"
-								>
-									Demo
-								</a>
+								Demo
 							</Button>
 						)}
 					</Stack>
