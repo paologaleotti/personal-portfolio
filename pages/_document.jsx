@@ -6,7 +6,7 @@ import NextDocument, { Html, Head, Main, NextScript } from "next/document";
 export default class Document extends NextDocument {
 	render() {
 		return (
-			<Html lang="en">
+			<Html lang="en" style={{ scrollBehavior: "smooth" }}>
 				<Head />
 				<title>Portfolio</title>
 				<body>
