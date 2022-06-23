@@ -24,7 +24,7 @@ const PROJECTS = [
 	},
 	{
 		title: "ASCIIgame",
-		desc: "Gioco minimale top-down scritto in C++ per un progetto universitario",
+		desc: "Gioco minimale per un progetto universitario",
 		imageSrc:
 			"https://media.discordapp.net/attachments/828988349225631787/989516919717654628/3.png",
 		badges: ["C++"],
