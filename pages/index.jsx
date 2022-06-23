@@ -1,5 +1,6 @@
 import Landing from "../components/sections/Landing";
 import Projects from "../components/sections/Projects";
+import Contacts from "../components/sections/Contacts";
 import { useRef } from "react";
 
 const PROJECTS = [
@@ -41,16 +42,27 @@ const PROJECTS = [
 
 export default function HomePage({ projectList }) {
 	const projRef = useRef();
+	const contactRef = useRef();
 
 	const scrollToProjectsHandler = () => {
 		window.scrollTo(0, projRef.current.offsetTop);
 	};
 
+	const scrollToContactsHandler = () => {
+		window.scrollTo(0, contactRef.current.offsetTop);
+	};
+
 	return (
 		<>
-			<Landing onProjClick={scrollToProjectsHandler} />
+			<Landing
+				onProjClick={scrollToProjectsHandler}
+				onContactClick={scrollToContactsHandler}
+			/>
 			<div ref={projRef}>
 				<Projects projects={projectList} />
+			</div>
+			<div ref={contactRef}>
+				<Contacts projects={projectList} />
 			</div>
 		</>
 	);

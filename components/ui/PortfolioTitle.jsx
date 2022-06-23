@@ -4,7 +4,10 @@ import { Heading, Text, useBreakpointValue } from "@chakra-ui/react";
 function PortfolioTitle() {
 	return (
 		<>
-			<Heading fontSize={{ base: "4xl", md: "5xl", lg: "5xl" }}>
+			<Heading
+				fontSize={{ base: "4xl", md: "5xl", lg: "5xl" }}
+				mt="10rem"
+			>
 				<Text
 					as={"span"}
 					position={"relative"}
