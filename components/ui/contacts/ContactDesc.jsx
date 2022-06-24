@@ -15,6 +15,7 @@ function ContactDesc() {
 					<b>Non esitare a contattarmi!</b>
 				</Text>
 				<br />
+
 				<Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
 					Sono al momento in cerca di una posizione come{" "}
 					<b>Sviluppatore Web</b> nella zona di Imola (BO).

@@ -22,6 +22,7 @@ function Projects(props) {
 				<SimpleGrid columns={[1, 2, 2]} spacingX={7} spacingY={7} p={7}>
 					{projectList}
 				</SimpleGrid>
+
 				<Box pb={10} pt={5}>
 					<Button
 						onClick={props.onModalOpen}
