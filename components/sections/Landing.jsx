@@ -1,8 +1,8 @@
 import { Box } from "@chakra-ui/react";
 import { Button, Flex, Image, Stack, Center } from "@chakra-ui/react";
-import LandingButtons from "../ui/LandingButtons";
-import PortfolioTitle from "../ui/PortfolioTitle";
-import Skills from "../ui/Skills";
+import LandingButtons from "../ui/landing/LandingButtons";
+import PortfolioTitle from "../ui/landing/PortfolioTitle";
+import Skills from "../ui/landing/Skills";
 
 function Landing(props) {
 	return (
