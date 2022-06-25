@@ -1,5 +1,4 @@
-import { Box } from "@chakra-ui/react";
-import { Button, Flex, Image, Stack, Center } from "@chakra-ui/react";
+import { Flex, Image, Stack, Show } from "@chakra-ui/react";
 import LandingButtons from "../ui/landing/LandingButtons";
 import PortfolioTitle from "../ui/landing/PortfolioTitle";
 import Skills from "../ui/landing/Skills";
@@ -18,16 +17,18 @@ function Landing(props) {
 					<Skills />
 				</Stack>
 			</Flex>
-			<Flex flex={1}>
-				<Image
-					alt={"Login Image"}
-					objectFit={"cover"}
-					src={
-						"https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80"
-					}
-					opacity="50%"
-				/>
-			</Flex>
+			<Show above="md">
+				<Flex flex={1}>
+					<Image
+						alt={"Login Image"}
+						objectFit={"cover"}
+						src={
+							"https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80"
+						}
+						opacity="50%"
+					/>
+				</Flex>
+			</Show>
 		</Stack>
 	);
 }

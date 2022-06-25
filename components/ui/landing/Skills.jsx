@@ -10,7 +10,7 @@ import {
 	SiReact,
 	SiRedux,
 } from "react-icons/si";
-import IconTip from "./IconTip";
+import IconTip from "../IconTip";
 
 function Skills() {
 	const iconSize = 27;

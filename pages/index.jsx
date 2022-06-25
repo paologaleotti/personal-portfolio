@@ -1,6 +1,7 @@
 import Landing from "../components/sections/Landing";
 import Projects from "../components/sections/Projects";
 import Contacts from "../components/sections/Contacts";
+import OtherProjects from "../components/sections/OtherProjects";
 import { useRef } from "react";
 
 const PROJECTS = [
@@ -69,6 +70,9 @@ export default function HomePage({ projectList }) {
 			<div ref={projRef}>
 				<Projects projects={projectList} />
 			</div>
+
+			<OtherProjects />
+
 			<div ref={contactRef}>
 				<Contacts projects={projectList} />
 			</div>
