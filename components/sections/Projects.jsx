@@ -1,7 +1,5 @@
 import { Center, SimpleGrid, Button, Box, VStack } from "@chakra-ui/react";
-import Link from "next/link";
 import Project from "../ui/myprojects/Project";
-import { FiArrowRight } from "react-icons/fi";
 
 function Projects(props) {
 	const projectList = props.projects.map((pr, id) => (

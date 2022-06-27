@@ -8,16 +8,14 @@ const PROJECTS = [
 	{
 		title: "Portfolio",
 		desc: "Tecnologie e sviluppo di questo sito web",
-		imageSrc:
-			"https://media.discordapp.net/attachments/828988349225631787/989597239536144393/covers.png",
+		imageSrc: "/images/portfolio.png",
 		ghLink: "https://github.com/paologaleotti/personal-portfolio",
 		badges: ["Next.js", "React", "Chakra-UI"],
 	},
 	{
 		title: "OrderMe",
 		desc: "Applicazione che permette di ordinare cibo",
-		imageSrc:
-			"https://media.discordapp.net/attachments/828988349225631787/989516919482744912/2.png",
+		imageSrc: "/images/orderme.png",
 		badges: ["React", "Firebase"],
 		demoLink: "https://order-me.netlify.app/",
 		ghLink: "https://github.com/paologaleotti/order-me",
@@ -25,8 +23,7 @@ const PROJECTS = [
 	{
 		title: "forkBook",
 		desc: "Cerca, salva e condividi le tue ricette preferite",
-		imageSrc:
-			"https://media.discordapp.net/attachments/828988349225631787/989516919289819206/1.png",
+		imageSrc: "/images/forkbook.png",
 		badges: ["JavaScript"],
 		demoLink: "https://forkbook.netlify.app/",
 		ghLink: "https://github.com/paologaleotti/forkbook",
@@ -34,16 +31,14 @@ const PROJECTS = [
 	{
 		title: "ASCIIgame",
 		desc: "Gioco minimale per un progetto universitario",
-		imageSrc:
-			"https://media.discordapp.net/attachments/828988349225631787/989516919717654628/3.png",
+		imageSrc: "/images/ascii.png",
 		badges: ["C++"],
 		ghLink: "https://github.com/paologaleotti/ASCII_game",
 	},
 	{
 		title: "Assembler-Hack",
 		desc: "Software che traduce un file .hack in un file binario",
-		imageSrc:
-			"https://media.discordapp.net/attachments/828988349225631787/989516919054942238/4.png",
+		imageSrc: "/images/assembler.png",
 		badges: ["c", "nand2tetris"],
 		ghLink: "https://github.com/paologaleotti/Assembler-hack",
 	},

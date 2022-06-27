@@ -29,9 +29,7 @@ function Landing(props) {
 					<Image
 						alt={"Login Image"}
 						objectFit={"cover"}
-						src={
-							"https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80"
-						}
+						src={"/images/wall1.jpg"}
 						opacity="50%"
 					/>
 				</Flex>

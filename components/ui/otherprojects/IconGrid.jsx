@@ -9,11 +9,13 @@ import {
 	SiPython,
 	SiEclipsemosquitto,
 	SiPhp,
+	SiNodedotjs,
 } from "react-icons/si";
 
 function IconGrid() {
 	const iconSize = 27;
 	const icons = [
+		{ label: "NodeJS", el: <SiNodedotjs size={iconSize} /> },
 		{ label: "PHP", el: <SiPhp size={iconSize} /> },
 		{ label: "MySQL", el: <SiMysql size={iconSize} /> },
 		{ label: "Python", el: <SiPython size={iconSize} /> },

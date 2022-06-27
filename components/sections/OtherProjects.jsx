@@ -1,17 +1,9 @@
-import { Flex, Stack, Heading, Text } from "@chakra-ui/react";
-import { useRouter } from "next/router";
+import { Flex, Stack } from "@chakra-ui/react";
 import IconGrid from "../ui/otherprojects/IconGrid";
 import List from "../ui/otherprojects/List";
 import OtherProjTitle from "../ui/otherprojects/OtherProjTitle";
 
 function Landing() {
-	const router = useRouter();
-
-	const goBackHandler = (event) => {
-		event.preventDefault();
-		router.replace("/");
-	};
-
 	return (
 		<Stack
 			p={10}

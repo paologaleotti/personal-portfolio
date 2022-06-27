@@ -1,4 +1,4 @@
-import { Box, Text, Stack, SimpleGrid, Tooltip } from "@chakra-ui/react";
+import { Box, Text, Stack, SimpleGrid } from "@chakra-ui/react";
 import {
 	SiCplusplus,
 	SiGit,
