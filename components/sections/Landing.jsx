@@ -6,7 +6,14 @@ import Skills from "../ui/landing/Skills";
 function Landing(props) {
 	return (
 		<Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
-			<Flex p={8} flex={1} align={"center"} justify={"center"} zIndex={1}>
+			<Flex
+				mt={{ base: "-5rem", md: "0", lg: "0" }}
+				p={8}
+				flex={1}
+				align={"center"}
+				justify={"center"}
+				zIndex={1}
+			>
 				<Stack spacing={6} w={"full"} maxW={"lg"}>
 					<PortfolioTitle />
 					<LandingButtons
