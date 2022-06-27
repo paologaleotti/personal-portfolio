@@ -10,7 +10,7 @@ const PROJECTS = [
 		desc: "Tecnologie e sviluppo di questo sito web",
 		imageSrc:
 			"https://media.discordapp.net/attachments/828988349225631787/989597239536144393/covers.png",
-		ghLink: "",
+		ghLink: "https://github.com/paologaleotti/personal-portfolio",
 		badges: ["Next.js", "React", "Chakra-UI"],
 	},
 	{
