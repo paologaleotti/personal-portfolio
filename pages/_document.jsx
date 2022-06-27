@@ -8,6 +8,7 @@ export default class Document extends NextDocument {
 		return (
 			<Html lang="en" style={{ scrollBehavior: "smooth" }}>
 				<Head />
+				<link rel="shortcut icon" href="/favicon.png" />
 				<title>Portfolio</title>
 				<body>
 					<ColorModeScript initialColorMode="dark" />
